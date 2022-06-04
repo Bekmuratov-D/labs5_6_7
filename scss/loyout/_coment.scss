@@ -1,0 +1,62 @@
+
+
+
+.coments__container{
+    margin-bottom: 100px;
+    .coments__title{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 1.5;
+        color: #474747;
+    }
+    .coments__coment{
+        margin-top: 48px;
+        display: flex;
+        .coment__img-container{
+            margin-right: 24px;
+        }
+        .coment__main{
+            .coment__header{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                .coment__name{
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 1.5;
+                    color: #474747;
+                    margin-right: 24px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .coment__time{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #777777;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .coment__text{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 2;
+                color: #474747;
+                margin-bottom: 0;
+            }
+            .coment__footer{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 2;
+                color: #777777;
+                margin-top: 8px;
+            }
+        }
+    }
+    .coments__coment_answer{
+        padding-left: 94px;
+        padding-bottom: 32px;
+        border-bottom: solid 1px #DFDFDF;
+    }
+}

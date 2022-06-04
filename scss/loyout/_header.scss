@@ -1,0 +1,91 @@
+@use "../utils/mixins";
+
+
+.header__wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px;
+    .header__logo{
+        width: 100%;
+        max-width: 280px;
+    }
+    .header__container{
+        width: 100%;
+        display: flex;
+        margin-left: 110px;
+        padding-top: 10px;
+        .header__menu{
+            align-items: center;
+            margin-right: 73px;
+            .menu__list{
+                display: flex;
+                .menu__item{
+                    margin-right: 30px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    .menu__link{
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: #777777;
+                        font-size: 16px;
+                        line-height: calc((32/16) * 100%);
+                    }
+                }
+            }
+        }
+        .header__form{
+            .header__form-container{
+                margin-right: 0;
+                .header__search{
+                    width: 225px;
+                    height: 40px;
+                    border: none;
+                    background-color: #F4F4F4;
+                    color: #474747;
+                    padding-right: 0;
+                    border-radius: 3%;
+                    &::placeholder{
+                        padding-left: 13px;
+                        color: #474747;
+                    }
+                }
+                .header__search-buttton{
+                    cursor: pointer;
+                    height: 40px;
+                    width: 40px;
+                    border: none;
+                    margin-left: 0px;
+                    background-color: #FFF300;
+                }
+            }
+        }
+    }
+}
+
+.header__search-lable{
+    display: none;
+}
+
+.burger1{
+    margin-left: 250px;
+    display: none;
+    cursor: pointer;
+    & line{
+        stroke: #808080;
+        transition: transform 0.1s ease;
+    }
+    &.burger_active .burger-icon__first{
+        transform: rotate(45deg) translateX(20px) translateY(-30px);
+    }
+    &.burger_active .burger-icon__second{
+        stroke: none;
+    }
+    &.burger_active .burger-icon__third{
+        transform: rotate(-45deg) translateX(-55px) translateY(-5px);
+    }
+}
+.burger__menu{
+    display: block;
+}

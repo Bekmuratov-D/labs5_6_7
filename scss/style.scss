@@ -1,0 +1,15 @@
+@use "base/normalize";
+@use "base/reset";
+@use "components/container";
+@use "utils/fonts";
+@use "utils/general";
+
+
+
+@use "loyout/header";
+@use "loyout/content";
+@use "loyout/sidebar";
+@use "loyout/footer";
+@use "loyout/add-comment";
+@use "loyout/coment";
+@use "base/media1";

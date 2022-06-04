@@ -1,0 +1,75 @@
+
+.add-comment__container{
+    margin-top: 48px;
+    margin-bottom: 64px;
+    .add-comment__title{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 1.5;
+        color: #474747;
+    }
+    .add-comment__form{
+        margin-top: 53px;
+        display: grid;
+        grid-template-columns:  (1fr 1fr 1fr);
+        .form__name{
+            
+        }
+        .form__checkbox{
+            margin-top: 36px;
+            grid-column: 1/4;
+            align-items: center;
+            .form__checkbox_12px{
+                font-size: 12px;
+                cursor: pointer;
+            }
+            .form__input-checkbox{
+                border-radius: 0;
+                padding: 2px;
+            }
+        }
+        .form__message{
+            margin-top: 38px;
+            grid-column: 1/4;
+            .form__input-textarea{
+                background-color: #F4F4F4;
+                border: none;
+                border-radius: 3px;
+                width: 100%;
+                height: 97px;
+            }
+        }
+        .form__button{
+            margin-top: 24px;
+            border: none;
+            width: 88px;
+            height: 44px;
+            background-color: #474747;
+            color: #ffffff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
+.form__input{
+    padding: 15px;
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 3px;
+}
+.form__lable{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #474747;
+}
+
+@media screen and (max-width: 750px) {
+
+    .form__name{
+        grid-column: 1/4;
+    }
+    .form__email{
+        grid-column: 1/4;
+    }
+}

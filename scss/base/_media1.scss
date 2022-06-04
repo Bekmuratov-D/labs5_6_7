@@ -1,0 +1,207 @@
+@media screen and (min-width: 1200px) {
+    .header__wrapper{
+        max-width: 1140px;
+    }
+    .wrapper{
+        max-width: 1140px;
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    body{
+        header{
+            .header__wrapper{
+                max-width: 980px;
+                padding: 10px;
+                .header__container{
+                    margin-left: 30px;
+                    .header__menu{
+                        margin-right: 20px;
+                        .menu__list{
+                            .menu__item{
+                                margin-right: 15px;
+                                &:last-child{
+                                    margin-right: 0;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    body{
+        header{
+            .header__wrapper{
+                max-width: 720px;
+                margin: 0 auto;
+                .header__container{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    main{
+        .main__wrapper{
+            max-width: 720px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "content content"
+                "sidebar sidebar"
+            ;
+            .sibebar{
+                grid-area: sidebar;
+                .sidebar__wrapper{
+                    max-width: 720px;
+                }
+            }
+            .main__container{
+                grid-area: content;
+                margin-top: 0;
+            }
+        }
+    }
+    .footer{
+        .footer__wrapper{
+            max-width: 720px;
+            .footer__icons{
+                .icons__list{
+                    margin-left: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    body{
+        header{
+            .header__wrapper{
+                max-width: 300px;
+                display: block;
+                margin-bottom: 50px;
+                .logo{
+                    margin: 0 auto;
+                    margin-bottom: 52px;
+                }
+                .header__container{
+                    display: block;
+                    margin: 0 auto;
+                    .header__menu{
+                        position: relative;
+                        margin-right: 0;
+                        .menu__burger{
+                            display: block;
+                        }
+                        .menu__list{
+                            transition: 0.5s all;
+                            top: 30px;
+                            max-width: 300px;
+                            width: 100%;
+                            position: absolute;
+                            display: block;
+                            width: 100%;
+                            max-height: 0;
+                            font-size: 0;
+                            z-index: 30;
+                            overflow: hidden;
+                            .menu__item{
+                                display: block;
+                                padding: 15px;
+                                background-color: rgba(0, 0, 0, 0.8);
+                                margin: 0;
+                                .menu__link{
+                                    color: azure;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .menu__list-active{
+                            overflow: visible;
+                            transition: 0.5s all;
+                        }
+
+                    }
+                    .header__form{
+                        .header__form-container{
+                            margin-top: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    main{
+        .main__wrapper{
+            max-width: 300px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "content content"
+                "sidebar sidebar"
+            ;
+
+            .sibebar{
+                grid-area: sidebar;
+                margin-bottom: 150px;
+                .sidebar__wrapper{
+                    max-width: 300px;
+                    
+                }
+            }
+            .main__container{
+                grid-area: content;
+                margin-top: 0;
+            }
+
+        }
+    }
+    .footer{
+        .footer__wrapper{
+            max-width: 300px;
+            display: block;
+            .footer__icons{
+                .icons__list{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .main__icons{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    body{
+        header{
+            .header__wrapper{
+                .header__container{
+                    .header__menu{
+                        .burger1{
+                            display: block;
+                        }
+                        .menu__burger{
+                            display: block;
+                            .menu__burger-button{
+                                background-color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+}
