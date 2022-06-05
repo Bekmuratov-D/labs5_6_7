@@ -536,10 +536,6 @@ body {
   transform: rotate(-45deg) translateX(-55px) translateY(-5px);
 }
 
-.burger__menu {
-  display: block;
-}
-
 .content {
   grid-area: content;
 }
@@ -890,7 +886,6 @@ body {
 }
 .add-comment__container .add-comment__form .form__message .form__input-textarea {
   background-color: #F4F4F4;
-  border: none;
   border-radius: 3px;
   width: 100%;
   height: 97px;
@@ -1139,5 +1134,55 @@ body {
   }
   body header .header__wrapper .header__container .header__menu .menu__burger .menu__burger-button {
     background-color: #000000;
+  }
+}
+@page {
+  size: A4;
+  margin: 1cm;
+}
+@media print {
+  *,
+*::before,
+*::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  .sidebar {
+    width: 10cm;
+  }
+  .sidebar .sidebar__wrapper {
+    padding: 1cm;
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  .form__input, .content__hashtag, .hashtag__content {
+    border: solid #000 1px;
+  }
+
+  .form__button {
+    border: solid #000 1px;
+  }
+
+  .add-comment, .coments, .sidebar, .main_content {
+    page-break-inside: avoid;
+  }
+
+  .form__input-textarea {
+    border: solid 2px #000;
   }
 }/*# sourceMappingURL=style.css.map */

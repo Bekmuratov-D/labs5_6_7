@@ -1,0 +1,48 @@
+@page {
+    size: A4;
+    margin: 1cm;
+}
+    
+
+@media print{
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+
+    .sidebar{
+        width: 10cm;
+        .sidebar__wrapper{
+            padding: 1cm;
+        }
+    }
+
+    header, footer{
+        display: none;
+    }
+    .form__input, .content__hashtag, .hashtag__content{
+        border: solid #000 1px;
+    }
+    .form__button{
+        border: solid #000 1px;
+    }
+    .add-comment, .coments, .sidebar, .main_content{
+        page-break-inside: avoid;
+    }
+    .form__input-textarea{
+        border: solid 2px #000;
+    }
+}
