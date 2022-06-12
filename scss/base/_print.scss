@@ -27,14 +27,18 @@
         width: 10cm;
         .sidebar__wrapper{
             padding: 1cm;
+            .explore{
+                display: none;
+            }
         }
+    }
+
+    .add-comment{
+        padding: 1cm;
     }
 
     header, footer, .add-comment{
         display: none;
-    }
-    .form__input, .content__hashtag, .hashtag__content{
-        border: solid #000 1px;
     }
     .form__button{
         border: solid #000 1px;
@@ -42,7 +46,17 @@
     .add-comment, .coments, .sidebar, .main__content{
         page-break-inside: avoid;
     }
-    .form__input-textarea{
-        border: solid 2px #000;
+    .content__img{
+        display: none;
+    }
+    .main__container{
+        margin-top: 0cm;
+    }
+    .coment__text{
+        margin-right: 1cm;
+    }
+    p{
+        padding-right: 3mm;
+        margin-right: 3mm;
     }
 }
