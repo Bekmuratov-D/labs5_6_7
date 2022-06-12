@@ -50,7 +50,7 @@
 
 @media screen and (max-width:992px) {
     main{
-        .main__wrapper{
+        .main{
             max-width: 720px;
             grid-template-columns: 1fr;
             grid-template-areas: 
@@ -144,7 +144,7 @@
 
 @media screen and (max-width:750px) {
     main{
-        .main__wrapper{
+        .main{
             max-width: 300px;
             grid-template-columns: 1fr;
             grid-template-areas: 

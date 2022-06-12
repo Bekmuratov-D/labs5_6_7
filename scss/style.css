@@ -362,7 +362,7 @@ a:active {
   padding: 10px;
 }
 
-.main__wrapper {
+.main {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
@@ -383,14 +383,14 @@ a:active {
 }
 
 @media screen and (max-width: 1199px) {
-  main .main__wrapper {
+  main .main {
     max-width: 980px;
     grid-template-columns: 280px 700px;
   }
-  main .main__wrapper .sidebar .sidebar__wrapper {
+  main .main .sidebar .sidebar__wrapper {
     padding-right: 10px;
   }
-  main .main__wrapper .main__container {
+  main .main .main__container {
     padding-left: 20px;
   }
 
@@ -526,14 +526,44 @@ body {
   stroke: #808080;
   transition: transform 0.1s ease;
 }
-.burger1.burger_active .burger-icon__first {
+.burger1.burger_active .burger1__first {
   transform: rotate(45deg) translateX(20px) translateY(-30px);
 }
-.burger1.burger_active .burger-icon__second {
+.burger1.burger_active .burger1__second {
   stroke: none;
 }
-.burger1.burger_active .burger-icon__third {
+.burger1.burger_active .burger1__third {
   transform: rotate(-45deg) translateX(-55px) translateY(-5px);
+}
+
+.menu__button {
+  border: none;
+}
+
+.header__search-lable {
+  display: none;
+}
+
+.menu__button-text {
+  display: none;
+}
+
+.header__skip {
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  top: 100px;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #808080;
+  color: white;
+  border-radius: 5px;
+  max-width: 50px;
+  display: none;
+}
+.header__skip:focus {
+  position: static;
+  display: block;
 }
 
 .content {
@@ -613,11 +643,11 @@ body {
   border-bottom: solid 1px #DFDFDF;
 }
 
-.conttent__text-list {
+.content__text-list {
   list-style: initial;
   margin-bottom: 64px;
 }
-.conttent__text-list li {
+.content__text-list li {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -641,12 +671,12 @@ body {
   border-radius: 3px;
 }
 
-.content-footer__icons {
+.content__footer-icons {
   display: flex;
   align-items: center;
   margin-top: 41px;
 }
-.content-footer__icons p {
+.content__footer-icons p {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
@@ -732,11 +762,11 @@ body {
   margin-top: 48px;
 }
 
-.conttent__text-list {
+.content__text-list {
   list-style: initial;
   margin-bottom: 64px;
 }
-.conttent__text-list li {
+.content__text-list li {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -760,12 +790,12 @@ body {
   border-radius: 3px;
 }
 
-.content-footer__icons {
+.content__footer-icons {
   display: flex;
   align-items: center;
   margin-top: 41px;
 }
-.content-footer__icons p {
+.content__footer-icons p {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
@@ -821,14 +851,14 @@ body {
 .icons .icons__list {
   display: flex;
 }
-.icons .icons__list .icon__item {
+.icons .icons__list .icons__item {
   margin-right: 23px;
   cursor: pointer;
 }
-.icons .icons__list .icon__item:hover {
+.icons .icons__list .icons__item:hover {
   opacity: 0.3;
 }
-.icons .icons__list .icon__item:active {
+.icons .icons__list .icons__item:active {
   opacity: 0.7;
 }
 .icons .icons__list :last-child {
@@ -1019,18 +1049,18 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
-  main .main__wrapper {
+  main .main {
     max-width: 720px;
     grid-template-columns: 1fr;
     grid-template-areas: "content content" "sidebar sidebar";
   }
-  main .main__wrapper .sibebar {
+  main .main .sibebar {
     grid-area: sidebar;
   }
-  main .main__wrapper .sibebar .sidebar__wrapper {
+  main .main .sibebar .sidebar__wrapper {
     max-width: 720px;
   }
-  main .main__wrapper .main__container {
+  main .main .main__container {
     grid-area: content;
     margin-top: 0;
   }
@@ -1096,19 +1126,19 @@ body {
   }
 }
 @media screen and (max-width: 750px) {
-  main .main__wrapper {
+  main .main {
     max-width: 300px;
     grid-template-columns: 1fr;
     grid-template-areas: "content content" "sidebar sidebar";
   }
-  main .main__wrapper .sibebar {
+  main .main .sibebar {
     grid-area: sidebar;
     margin-bottom: 150px;
   }
-  main .main__wrapper .sibebar .sidebar__wrapper {
+  main .main .sibebar .sidebar__wrapper {
     max-width: 300px;
   }
-  main .main__wrapper .main__container {
+  main .main .main__container {
     grid-area: content;
     margin-top: 0;
   }
@@ -1166,7 +1196,7 @@ a:visited {
     padding: 1cm;
   }
 
-  header, footer {
+  header, footer, .add-comment {
     display: none;
   }
 
@@ -1178,7 +1208,7 @@ a:visited {
     border: solid #000 1px;
   }
 
-  .add-comment, .coments, .sidebar, .main_content {
+  .add-comment, .coments, .sidebar, .main__content {
     page-break-inside: avoid;
   }
 

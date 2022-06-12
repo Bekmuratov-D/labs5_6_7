@@ -5,7 +5,7 @@
     padding: 10px;
 }
 
-.main__wrapper{
+.main{
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 1199px) {
     main{
-        .main__wrapper{
+        .main{
             max-width: 980px;
             grid-template-columns: 280px 700px;
             .sidebar{

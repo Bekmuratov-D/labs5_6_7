@@ -76,14 +76,41 @@
         stroke: #808080;
         transition: transform 0.1s ease;
     }
-    &.burger_active .burger-icon__first{
+    &.burger_active .burger1__first{
         transform: rotate(45deg) translateX(20px) translateY(-30px);
     }
-    &.burger_active .burger-icon__second{
+    &.burger_active .burger1__second{
         stroke: none;
     }
-    &.burger_active .burger-icon__third{
+    &.burger_active .burger1__third{
         transform: rotate(-45deg) translateX(-55px) translateY(-5px);
     }
 }
 
+.menu__button{
+    border: none;
+}
+.header__search-lable{
+    display: none;
+}
+.menu__button-text{
+    display: none;
+}
+
+.header__skip{
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    top: 100px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #808080;
+    color: #ffff;
+    border-radius: 5px;
+    max-width: 50px;
+    display: none;
+    &:focus{
+        position: static;
+        display: block;
+    }
+}

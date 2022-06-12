@@ -30,7 +30,7 @@
         }
     }
 
-    header, footer{
+    header, footer, .add-comment{
         display: none;
     }
     .form__input, .content__hashtag, .hashtag__content{
@@ -39,7 +39,7 @@
     .form__button{
         border: solid #000 1px;
     }
-    .add-comment, .coments, .sidebar, .main_content{
+    .add-comment, .coments, .sidebar, .main__content{
         page-break-inside: avoid;
     }
     .form__input-textarea{
